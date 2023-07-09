@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id = "moive-form">
+        <input type = "text" placeholder = "title" id = "title">
+        <input type = "text" placeholder = "rating" id = "rating">
+        <input id = "submit" type = "submit" value = "SUBMIT!">
+    </form>
+    <div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+    //2. When the form is submitted, capture the values for each of the inputs and append them to the DOM along with a button to remove each title and rating from the DOM.
+
+    //This is incomplete. Will come back later to finish the movie app I already invested a lot of time on this. Resources felt incomplete. I assumed based on what I learned earlier with DOM that it had to do with e.preventDefault. Wish it was gone over in terms of jQuery as well! Will ask mentor. 
+
+    $('div').append('<p> Hello! </p>')
+        $("#movie-form").on("submit", function() {
+            let title = $('#title').val();
+            let rating = $('#rating').val();
+   $('div').append(title)
+        })
+    </script>
+</body>
+</html>
